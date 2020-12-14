@@ -3,6 +3,8 @@ const client = new Discord.Client({
   partials:["MESSAGE"]
 });
 
+const config = require("./config.json");
+
 client.on("message", msg => {
   if(msg.content === "!!clear"){
     if(msg.member.hasPermission("ADMINISTRATOR")){
@@ -19,4 +21,4 @@ client.on("ready", () => {
   console.log("loged in as", client.user.tag)
 })
 
-client.login("Nzg3OTUzMjcwNDM3MTgzNTA5.X9ccqw.u27VtuBoOdgmybMRXxLsy1XDzDQ")
+client.login(config.token)
