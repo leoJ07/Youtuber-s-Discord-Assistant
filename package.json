@@ -2,10 +2,10 @@
   "name": "Youtuber-s-Discord-Assistant",
   "version": "1.0.0",
   "description": "This is a discord bot that maces it easier to use discord",
-  "main": "app.js",
+  "main": "bot.js",
   "scripts": {
-    "start": "node app.js",
-    "startdev": "nodemon app.js"
+    "start": "node bot.js",
+    "startdev": "nodemon bot.js"
   },
   "repository": {
     "type": "git",
