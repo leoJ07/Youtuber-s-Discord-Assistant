@@ -22,6 +22,7 @@
     "nodemon": "^2.0.6"
   },
   "dependencies": {
-    "discord.js": "^12.5.1"
+    "discord.js": "^12.5.1",
+    "youtube-notification": "^1.1.0"
   }
 }

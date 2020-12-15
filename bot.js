@@ -4,6 +4,14 @@ const client = new Discord.Client({
 });
 
 const config = require("./config.json");
+const youtube = require("./youtube.js");
+
+youtube.sub("UCroBddMDD0JnSI40dzx_iPw", "776791237574393868", "788094183549698069");
+youtube.sub("UCroBddMDD0JnSI40dzx_iPw", "776791237574393868", "788309245678190592");
+youtube.sub("UCroBddMDD0JnSI40dzx_iPw", "783768286575460362", "783768286575460366");
+console.log(youtube.subs)
+
+youtube.init(client, youtube.subs);
 
 client.on("message", msg => {
   if(msg.content === "!!clear"){
