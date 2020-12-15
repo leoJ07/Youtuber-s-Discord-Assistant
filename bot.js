@@ -3,7 +3,7 @@ const client = new Discord.Client({
   partials:["MESSAGE"]
 });
 
-const config = require("./config.json");
+require('dotenv').config();
 const youtube = require("./youtube.js");
 
 youtube.sub("UCroBddMDD0JnSI40dzx_iPw", "776791237574393868", "788094183549698069");
@@ -29,4 +29,4 @@ client.on("ready", () => {
   console.log("loged in as", client.user.tag)
 })
 
-client.login(config.token)
+client.login(process.env.token)
